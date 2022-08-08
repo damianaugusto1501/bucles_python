@@ -7,30 +7,32 @@
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejercicios con bucles "while"
+# Ejemplos con bucles "for"
 
-x = 0
-# Realizar un bucle "while" cuya condición de continuidad
-# sea que <x sea menor a 10> y que <x sea distinto de 6>
-# Colocar ambas condiciones como condicion del "while" realizando
-# una condición compuesta (utilice el operador "and" o "or" según corresponda)
-# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
-# e imprimir en pantalla el resultado de X (antes de incrementar) con print
+# Dado la siguiente lista de colores, utilizar "for"
+# para imprimir en pantalla todos los colores
+colores = ['rojo', 'naranja', 'verde', 'azul']
 
-while x < 10 and x != 6:
-    print("valor actual de x : ",x)
-    x += 2
 
-# Realice el mismo bucle "while" pero en vez de estar formado por una condición
-# compuesta, que el "while" siga iterando mientras <x sea menos a 10>, y dentro del
-# "while" consultar si <x es igual a 6>, y en ese caso realizar una interrupción del bucle
-# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
-# e imprimir en pantalla el resultado de X (antes de incrementar) con print
+for nombre in colores:
+    print("los colores son : ",nombre)
 
-while x < 10 :
-    if x  == 6:
-        break
-    print("el valor de x es :",x)
-    x += 2
+
+# Itere el "for" utilizando la lista como parámero
+# y utilizar como elemento del "for" cada color
+# for color ..
+
+for color in colores:
+    print("el color es :",color)
+
+# Itere el "for" utilizando el tamaño de la lista
+# como parámetro y utilizar el índice para acceder a
+# los elementos de la lista
+# for i ...
+
+for i in range(len(colores)) :
+    print("",i,", color :",colores[i])
+
+
 
 print("terminamos!")
