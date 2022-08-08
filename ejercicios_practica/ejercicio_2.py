@@ -9,30 +9,15 @@
 
 # Ejemplos con bucles "for"
 
-# Dado la siguiente lista de colores, utilizar "for"
-# para imprimir en pantalla todos los colores
-colores = ['rojo', 'naranja', 'verde', 'azul']
+# Dado la siguiente lista de números, utilizar "for"
+# para recorrer toda la lista y realizar la sumatoria de todos los números
+# La sumatoria se deberá ir guardando en la variable "suma"
+numeros = [1, 5, -1, 6, 10, 2, -5]
+suma = 0   # Variable ya inicializada, la suma arranca en cero
 
+for numero in numeros:
+    suma += numero
+    print("la suma es",suma)
+    
+print("terminamos!, el resultado final almacenado en suma debe ser 18")
 
-for nombre in colores:
-    print("los colores son : ",nombre)
-
-
-# Itere el "for" utilizando la lista como parámero
-# y utilizar como elemento del "for" cada color
-# for color ..
-
-for color in colores:
-    print("el color es :",color)
-
-# Itere el "for" utilizando el tamaño de la lista
-# como parámetro y utilizar el índice para acceder a
-# los elementos de la lista
-# for i ...
-
-for i in range(len(colores)) :
-    print("",i,", color :",colores[i])
-
-
-
-print("terminamos!")
