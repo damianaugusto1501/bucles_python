@@ -7,17 +7,30 @@
 # IMPORTANTE: NO borrar los comentarios
 # que aparecen en verde con el hashtag "#"
 
-# Ejemplos con bucles "for"
+# Ejercicios con bucles "while"
 
-# Dado la siguiente lista de números, utilizar "for"
-# para recorrer toda la lista y realizar la sumatoria de todos los números
-# La sumatoria se deberá ir guardando en la variable "suma"
-numeros = [1, 5, -1, 6, 10, 2, -5]
-suma = 0   # Variable ya inicializada, la suma arranca en cero
+x = 0
+# Realizar un bucle "while" cuya condición de continuidad
+# sea que <x sea menor a 10> y que <x sea distinto de 6>
+# Colocar ambas condiciones como condicion del "while" realizando
+# una condición compuesta (utilice el operador "and" o "or" según corresponda)
+# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
+# e imprimir en pantalla el resultado de X (antes de incrementar) con print
 
-for numero in numeros:
-    suma += numero
-    print("la suma es",suma)
-    
-print("terminamos!, el resultado final almacenado en suma debe ser 18")
+while x < 10 and x != 6:
+    print("valor actual de x : ",x)
+    x += 2
 
+# Realice el mismo bucle "while" pero en vez de estar formado por una condición
+# compuesta, que el "while" siga iterando mientras <x sea menos a 10>, y dentro del
+# "while" consultar si <x es igual a 6>, y en ese caso realizar una interrupción del bucle
+# En cada iteracion del bucle debe incrementar el valor de "x" en "2"
+# e imprimir en pantalla el resultado de X (antes de incrementar) con print
+
+while x < 10 :
+    if x  == 6:
+        break
+    print("el valor de x es :",x)
+    x += 2
+
+print("terminamos!")
