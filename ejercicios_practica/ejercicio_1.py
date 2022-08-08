@@ -9,26 +9,35 @@
 
 # Ejercicios con bucles "while"
 
+from operator import truediv
+
+
 x = 0
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea menor a 6>
 # Además, complete la línea de código necesaria para que
 # el valor de "x" incremente "1" en cada iteración
-condicion = False
-
 # reemplace "condicion" por lo que crea necesario
-while condicion:    
-    print("Valor de x =", x)
+
+while x < 6 :
+    print("el valor de x es :",x)
+    x  += 1
+
     # Coloque la línea de código para que "x" incremente "1"
 
+
 x = 5
+
 # Dado el siguiente "while", complete la condicion
 # para que el "while" itere siempre que <x sea mayor o igual a 0>
 # Además, complete la línea de código necesaria para que
 # el valor de "x" decremente "1" en cada iteración
 
-while condicion:    # reemplace "condicion" por lo que crea necesario
-    print("Valor de x =", x)
+while x >= 0 :
+    print("el valor de x es :",x)
+    x  -= 1
+
+ # reemplace "condicion" por lo que crea necesario
     # Coloque la línea de código para que "x" decremente "1"
 
 print("terminamos!")
