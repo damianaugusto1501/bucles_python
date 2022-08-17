@@ -33,5 +33,50 @@ Se debe debe imprimir un cartel de error si el operador ingresado no es
 alguno de lo soportados o no es la palabra "FIN".
 '''
 
+from operator import truediv
+import string
+
+
 print("Mi Calculadora (^_^)")
+
 # Empezar aquí la resolución del ejercicio
+
+bucle = 1
+resultado = 0
+pregunta = string
+
+
+while bucle == 1 :
+    numero_1 = int(input('Ingrese el primer número de la calculadora\n'))
+    operador = str(input("Ingrese operador matematico : simbolos +,-,*,/,**\n"))
+
+    if operador != "+" and operador != "-" and operador != "/" and operador != "*" and operador != "**" :
+        print ("el operador no es correcto")
+
+    numero_2 = int(input('Ingrese el segundo número de la calculadora\n'))
+
+    if operador == "+" :
+        resultado = numero_1 + numero_2
+        print ("el resultado de sumar es : ",resultado)
+    elif operador == "-" :
+        resultado = numero_1 - numero_2
+        print ("el resultado de restar es : ",resultado)
+    elif operador == "*" :
+        resultado = numero_1 * numero_2
+        print ("el resultado de multiplicar es : ",resultado)
+    elif operador == "/" :
+        resultado = numero_1 / numero_2
+        print ("el resultado de dividir es : ",resultado)
+    elif operador == "**" :
+        resultado = numero_1 * numero_2
+        print ("el resultado de potenciar es : ",resultado)
+    
+    
+    
+        
+    pregunta = str.lower(input("ingrese fin si desea salir\n"))
+
+    if pregunta == "fin" :
+        break
+    else :
+        print("el bucle comenzara otra vez")
